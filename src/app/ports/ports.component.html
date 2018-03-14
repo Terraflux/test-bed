@@ -1,0 +1,11 @@
+<h2>Top Ports</h2>
+<ul class="ports">
+  <li *ngFor="let port of ports">
+    <a routerLink="/detail/{{port.id}}">
+      <span class="badge">{{port.id}}</span>
+    </a>
+  </li>
+</ul>
+
+
+<app-port-detail [port]="selectedPort"></app-port-detail>

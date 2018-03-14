@@ -1,0 +1,11 @@
+<div *ngIf="port">
+  <p>
+    Port number {{ port.id }} is for {{ port.name | uppercase }} over {{ port.protocol }}
+  </p>
+  <div>
+    <label>name:
+      <input [(ngModel)]="port.name" placeholder="name">
+    </label>
+  </div>
+</div>
+<button (click)="goBack()">go back</button>

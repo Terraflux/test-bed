@@ -1,0 +1,9 @@
+<h3>Top Ports</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let port of ports" class="col-1-4"
+  routerLink="/detail/{{port.id}}">
+    <div class="module port">
+      <h4>{{port.name}}</h4>
+    </div>
+  </a>
+</div>
